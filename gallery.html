@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - ShaInspire</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="gallery.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html">
+        <img src="media/logo.png" alt="ShaInspire Logo" class="logo">
+      </a>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog/Insights</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery-section">
+      <div class="container">
+        <h2 class="gallery-title">Our Event Gallery</h2>
+        <p class="gallery-subtitle">Glimpses from our sessions, collaborations, and milestones.</p>
+
+        <div class="event-gallery-row">
+          <div class="gallery-item">
+            <img src="media/pic3.jpg" alt="D.I.S.H.A Orientation Programme">
+            <h3 class="event-title">D.I.S.H.A Orientation Programme</h3>
+          </div>
+
+          <div class="gallery-item">
+            <img src="media/pic6.jpg" alt="International Women's Day">
+            <h3 class="event-title">International Women's Day Celebration</h3>
+          </div>
+
+          <div class="gallery-item">
+            <img src="media/pic9.jpg" alt="HR Conclave">
+            <h3 class="event-title">HR Conclave (Pan India)</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="collage-gallery-section">
+      <div class="container">
+        <h2 class="collage-title">Moments That Inspire</h2>
+        <p class="collage-subtitle">
+          A colorful mix of our events, teamwork, and achievements.
+        </p>
+
+        <div class="swiper collage-gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="media/shaina.jpg" alt="Gallery Image 11" /></div>
+            <div class="swiper-slide"><img src="media/pic1.jpg" alt="Gallery Image 1" /></div>
+            <div class="swiper-slide"><img src="media/pic3.jpg" alt="Gallery Image 3" /></div>
+            <div class="swiper-slide"><img src="media/pic12.jpeg" alt="Gallery Image 12" /></div>
+            <div class="swiper-slide"><img src="media/pic2.jpg" alt="Gallery Image 2" /></div>
+            <div class="swiper-slide"><img src="media/pic5.jpg" alt="Gallery Image 5" /></div>
+            <div class="swiper-slide"><img src="media/pic6.jpg" alt="Gallery Image 6" /></div>
+            <div class="swiper-slide"><img src="media/pic7.jpg" alt="Gallery Image 7" /></div>
+            <div class="swiper-slide"><img src="media/pic8.jpg" alt="Gallery Image 8" /></div>
+            <div class="swiper-slide"><img src="media/pic9.jpg" alt="Gallery Image 9" /></div>
+            <div class="swiper-slide"><img src="media/pic10.jpg" alt="Gallery Image 10" /></div>
+            <div class="swiper-slide"><img src="media/pic11.jpg" alt="Gallery Image 11" /></div>
+            <div class="swiper-slide"><img src="media/pic4.jpg" alt="Gallery Image 4" /></div>
+            <div class="swiper-slide"><img src="media/pic13.jpeg" alt="Gallery Image 13" /></div>
+            <div class="swiper-slide"><img src="media/pic14.jpeg" alt="Gallery Image 14" /></div>
+            <div class="swiper-slide"><img src="media/pic15.jpeg" alt="Gallery Image 15" /></div>
+            <div class="swiper-slide"><img src="media/pic16.jpeg" alt="Gallery Image 16" /></div>
+            <div class="swiper-slide"><img src="media/pic17.jpeg" alt="Gallery Image 17" /></div>
+            <div class="swiper-slide"><img src="media/pic18.jpeg" alt="Gallery Image 18" /></div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </section>
+
+
+
+  </main>
+
+
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+  <link rel="stylesheet" href="footer.css">
+
+  <script src="script.js"></script>
+</body>
+
+</html>
