@@ -237,4 +237,40 @@
 .swiper-pagination-bullet-active {
   background: #ff69b4;
   opacity: 1;
+
+}
+
+
+.posh-cert-section {
+  padding: 40px 0;
+  background: #ffffff;
+  text-align: center;
+}
+
+.posh-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #3D0066;
+  margin-bottom: 6px;
+}
+
+.posh-subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.posh-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.posh-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  background: #fff;
 }
